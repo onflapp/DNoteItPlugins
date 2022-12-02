@@ -5,6 +5,6 @@ Plugins for DNoteIt app
 ## Install plugins using GIT
 
 ```
-git clone https://github.com/onflapp/DNoteItPlugins.git
-cp -r ./DNoteItPlugins/* ~/Library/Application\ Scripts/com.onflapp.DNoteItPlugins-Mac 
+cd ~/Library/Application\ Scripts/com.onflapp.DNoteIt-Mac 
+git clone https://github.com/onflapp/DNoteItPlugins.git .
 ```
