@@ -31,6 +31,6 @@ would invoke script *filter_mydate.txt* and inserting current date in place of t
 The scripts folder is under your home folder **Library/Application Scripts/com.onflapp.DNoteIt-Mac**
 You can use Finder to go there directly:
 
-- select menu "Go", then "Go to Folder"
-- type in '~/Library/Application Scripts/com.onflapp.DNoteIt-Mac'
-- If this folder does not exist already, create it.
+1. select menu "Go", then "Go to Folder"
+2. type in '~/Library/Application Scripts/com.onflapp.DNoteIt-Mac'
+3. If this folder does not exist already, create it.
