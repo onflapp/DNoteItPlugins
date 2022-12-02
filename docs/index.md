@@ -10,7 +10,7 @@ Downloading and modifying one of the [sample plugins](https://github.com/onflapp
 DNoteIt plugin is a shell scripts that read data from input (optional) and writes to output. The output can by any valid MD markup, including HTML.
 The shell script will be executed with following arguments:
 
-- $1 - temporary directory containing the mail MD file
+- $1 - temporary directory containing the main .md file
 - $2 - real path pointing the dnote document
 
 The plugin is invoked by looking up a name of *fenced code block* and passing its content (if relevant) as stdin.
@@ -24,7 +24,7 @@ For example
 ```
 </pre>
 
-would invoke script filter_mydate.txt and inserting current date in place of the fenced code block.
+would invoke script *filter_mydate.txt* and inserting current date in place of the fenced code block.
 
 # Where do I find the Scripts folder?
 
