@@ -1,0 +1,32 @@
+#!/bin/bash -x
+
+TMP="/tmp/$$.dnoted"
+mkdir -p "$TMP/_files"
+
+cat > "$TMP/_files/text.md"
+
+case "$1" in
+  /*)
+    F="$1"
+    ;;
+  *)
+    F="$PWD/$1"
+    ;;
+esac
+
+case "$1" in
+  *.dn)
+    cd "$TMP"
+    zip -rq "$F" "_files"
+    ;;
+  *.dnote)
+    cd "$TMP"
+    zip -rq "$F" "_files"
+    ;;
+  *.dnoted)
+    cp -R "$TMP" "$F"
+    ;;
+  *)
+    echo "dncat [file]"
+    ;;
+esac
